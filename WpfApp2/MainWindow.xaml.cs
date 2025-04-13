@@ -33,5 +33,17 @@ namespace WpfCalculator
                 resultText.Text = "Invalid input";
             }
         }
+        private void MultiplyButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (double.TryParse(textBox1.Text, out double num1) && double.TryParse(textBox2.Text, out double num2))
+            {
+                double result = num1 * num2;
+                resultText.Text = result.ToString();
+            }
+            else
+            {
+                resultText.Text = "Invalid input";
+            }
+        }
     }
 }
