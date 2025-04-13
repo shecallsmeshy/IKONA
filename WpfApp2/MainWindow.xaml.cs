@@ -45,5 +45,24 @@ namespace WpfCalculator
                 resultText.Text = "Invalid input";
             }
         }
+        private void DivideButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (double.TryParse(textBox1.Text, out double num1) && double.TryParse(textBox2.Text, out double num2))
+            {
+                if (num2 != 0)
+                {
+                    double result = num1 / num2;
+                    resultText.Text = result.ToString();
+                }
+                else
+                {
+                    resultText.Text = "Cannot divide by zero";
+                }
+            }
+            else
+            {
+                resultText.Text = "Invalid input";
+            }
+        }
     }
 }

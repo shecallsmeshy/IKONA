@@ -22,6 +22,7 @@
             <Button x:Name="addButton" Content="+" Margin="5" Width="50" Click="AddButton_Click"/>
             <Button x:Name="subtractButton" Content="-" Margin="5" Width="50" Click="SubtractButton_Click"/>
             <Button x:Name="multiplyButton" Content="*" Margin="5" Width="50" Click="MultiplyButton_Click"/>
+            <Button x:Name="divideButton" Content="/" Margin="5" Width="50" Click="DivideButton_Click"/>
         </StackPanel>
 
         <TextBlock x:Name="resultText" Grid.Row="3" Margin="10" Height="30" 
